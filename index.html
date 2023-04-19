@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bus Arabic Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bus Arabic Simulator</h1>
+    <p>This is an exciting application for bus and simulator lovers. The application allows players to take on the role of a bus driver and complete various routes in the city.</p>
+    
+    <div class="content-block">
+        <p></p>
+        <a href="fh.html" class="button">Privacy Policy</a>
+    </div>
+    
+    <div class="content-block">
+        <p></p>
+        <a href="ek.html" class="button">Terms & Conditions</a>
+    </div>
+    
+    <div class="content-block">
+        <p>Examples.</p>
+        <div class="images">
+            <img src="Artboard 2-1.png">
+            <img src="Artboard 2-2.png">
+            <img src="Artboard 2-3.png">
+        </div>
+        <a href="cg.html" class="button">delete data</a>
+    </div>
+    
+    <script>
+        // JavaScript для добавления трекера курсора миши
+        const cursorTracker = document.createElement("div");
+        cursorTracker.style.width = "20px";
+        cursorTracker.style.height = "20px";
+        cursorTracker.style.borderRadius = "50%";
+        cursorTracker.style.backgroundColor = "red";
+        cursorTracker.style.position = "absolute";
+        cursorTracker.style.top = "0";
+        cursorTracker.style.left = "0";
+        cursorTracker.style.zIndex = "9999";
+        document.body.appendChild(cursorTracker);
+        
+        document.addEventListener("mousemove", function(event) {
+            const x = event.clientX;
+            const y = event.clientY;
+            cursorTracker.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+</body>
+</html>

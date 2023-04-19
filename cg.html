@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Data Deletion</title>
+</head>
+<body>
+	<h1>User Data Deletion</h1>
+	<p>To delete your personal data, please fill out the form below:</p>
+	<form method="POST" action="process.php">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="confirm_email">Confirm Email:</label>
+		<input type="email" id="confirm_email" name="confirm_email"><br><br>
+		<label for="reason">Reason for Deletion:</label>
+		<select id="reason" name="reason">
+			<option value="privacy">I want to delete my personal data for privacy reasons</option>
+			<option value="accuracy">I want to delete my personal data because it is inaccurate</option>
+			<option value="other">Other</option>
+		</select><br><br>
+		<label for="message">Additional Information:</label><br>
+		<textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+		 <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
